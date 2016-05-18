@@ -3,7 +3,7 @@
  */
 
 
-taskApp.factory('validationService', ['$rootScope', function ($rootScope) {
+taskApp.service('validationService', [function () {
 
     return{
 
