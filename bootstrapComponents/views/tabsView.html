@@ -1,0 +1,7 @@
+
+<ul class="nav nav-tabs">
+    <li ng-class="{'active': $index == 0}" ng-repeat="tab in tabs track by $index"><a href="#{{tab}}-1" data-toggle="tab">{{tab}}</a></li>
+</ul>
+<div class="tab-content" >
+    <div class="tab-pane fade" ng-class="{'in active': $index == 0}" ng-repeat="tab in tabs track by $index" id="{{tab}}-1">{{tab}} sample content</div>
+</div>

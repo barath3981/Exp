@@ -1,0 +1,89 @@
+<html>
+<head>
+	<link rel="stylesheet" href="../lib/css/bootstrap.min.css" >
+	<style>
+		.page-header {
+			-moz-border-bottom-colors: none;
+			-moz-border-left-colors: none;
+			-moz-border-right-colors: none;
+			-moz-border-top-colors: none;
+			background: rgba(0, 0, 0, 0) -moz-linear-gradient(left center , #ffffff, #cccccc, #ffffff) repeat scroll 0 0;
+			border-bottom: 0 none;
+			border-image: none;
+			border-left: 0 none;
+			border-right: 0 none;
+			border-top: 1px solid #cccccc !important;
+			clear: both;
+			height: 5px;
+			margin: 0;
+			padding: 0;
+		}
+	</style>
+	<script type="text/javascript" src="../lib/angular.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body ng-app="promiseApp" ng-controller="promiseCtrl">
+<div class="container">
+	<div class="row">
+		<div class="col-md-2">
+			 <img style="width:96%;" src="images/google.png"/>
+     	</div>
+		<div class="col-md-10">
+			Content will goes here
+		</div>
+		<div class="col-md-12">
+			<div class="page-header"></div>
+		</div>
+	</div>
+	<form name="registrationForm">
+		<div class="panel panel-primary form form-horizontal" ng-form>
+			<div class="panel-heading">
+				Registration
+			</div>
+			<div class="panel-body">
+				<div class="form-group">
+					<div>
+						<event-type main-label="Event Type*: " label1="Private" label2="Open Invitation" model="eventDetails.eventType"></event-type>
+					</div>
+					<div ng-if="eventDetails.eventType == '0'">
+						<event-type main-label="RSVP Settings*: " label1="Yes, I need RSVP" label2="No, I do not need RSVP" model="eventDetails.RSVPType" func="updateCategory(eventDetails.RSVPType)"></event-type>
+					</div>
+					<div>
+						<select-box main-label="Category*: " model="eventDetails.eventCategory" selectbox-data="categories"></select-box>
+					</div>
+					<div>
+						<input-form-field
+								main-label="Event Title*: "
+								place-holder="Enter Event Title"
+								model="eventDetails.eventTitle"></input-form-field>
+					</div>
+					<password-field label="Email" name="val1" min="3" max="9" required></password-field>
+					<password-field label="Email" name="val2" min="3" max="9" required></password-field>
+				</div>
+
+			</div>
+			<div class="panel-footer">
+				<div class="btn-group">
+					<input type="button" class="btn-primary" ng-disabled="registrationForm.$invalid" value="Submit">
+				</div>
+			</div>
+		</div>
+	</form>
+	<!--<div class="row">
+		<div class="panel-primary">
+			<div class="panel-heading">
+				Just check
+			</div>
+			<div class="panel-body">
+				Just body
+			</div>
+		</div>
+	</div>-->
+	<!--<div class="form-group">
+
+		<label class="control-label">Name</label>
+		<input type="text" class="form-control">
+	</div>-->
+</div>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Case</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../lib/css/bootstrap.min.css">
+    <style>
+        body {
+            background:White;
+        }
+        .ng-invalid {
+            border: 1px solid red;
+        }
+        #main {
+            cursor:default;
+            margin:0 auto 100px;
+            padding:10px 25px;
+            width:580px;
+        }
+        #main h1 {
+            font-size:24px;
+            padding-left:10px;
+        }
+        #main .sCart {
+            float:right;
+            padding-right:25px;
+        }
+        .sCart .quantity {
+            font-size:32px;
+            vertical-align:8px;
+        }
+        #items {
+            clear:both;
+        }
+        #main .item {
+            border:1px solid #999999;
+            display:inline-block;
+            margin:0 8px 15px;
+            width: 170px;
+        }
+        .item-int {
+            margin:0 auto;
+            padding:10px 0 30px;
+        }
+        .item-int h3 {
+            margin:0;
+            padding-left:10px;
+        }
+        .item-int img {
+            width:160px;
+        }
+        .item-int .data {
+            margin:5px 0;
+            text-align:center;
+        }
+        .data span {
+            font-size:12px;
+            padding:0 10px;
+        }
+        .right {
+            float:right;
+        }
+        .left {
+            float:left;
+        }
+        .note {
+            color:#444444;
+            font-size:13px;
+            text-align:right;
+        }
+    </style>
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../lib/angular.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body ng-app="promiseApp" ng-controller="promiseCtrl">
+
+<div class="container">
+    <h2>Dynamic Tabs</h2>
+    <ul class="nav nav-tabs">
+        <li><a data-toggle="tab" href="#home">Home</a></li>
+        <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+        <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+        <li class="active"><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+        <li><a data-toggle="tab" href="#menu4">Menu 4</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div id="home" class="tab-pane fade">
+            <h3>HOME</h3>
+            <div>Value of name in tmpl Name {{name}}</div>
+            <div>Value of name in tmpl Age {{age}}</div>
+            <input type="button" value="From Controller" ng-click="alertName()">
+
+            <p><==================Directive=========================></p>
+
+            <div my-first-directive name="{{name}}" age="age" func="alertName()"></div>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+            <h3>Menu 1</h3>
+            <div id="main">
+                <div id="header">
+                    <h1>{{title}}</h1>
+
+                    <shopping-cart></shopping-cart>
+                </div>
+                <div id="items">
+                    <div class="item" ng-repeat="i in items">
+                        <div item-card item-title="{{i.title}}" item-src="{{i.src}}" item-click="addToCart(i.title, i.price)" item-price="{{i.price}}"></div>
+                    </div>
+                </div>
+                <hr/>
+                <div id="footer">
+                    <shopping-cart></shopping-cart>
+                </div>
+            </div>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+            <h3>Menu 2</h3>
+            <input type="text" focus-me="focusText" value="SelectedText" select-all-on-focus>
+            <input type="button" value="Focus" ng-click="focusMe1()" >
+            <br><br><br>
+            <p><======================Custom Ng-repeat ========================></p>
+            <ul>
+                <li lk-repeat="name in names">{{name}}</li>
+            </ul>
+        </div>
+        <div id="menu3" class="tab-pane fade in active">
+            <h3>Menu 3</h3>
+            <my-dir>
+                Parent
+                <my-dir>Child</my-dir>
+            </my-dir>
+            <div ng-repeat-start="item in items"></div>
+            <span>{{item.title}}</span>
+            <span>{{item.price}}</span>
+            <span>{{item.src}}</span>
+            <div ng-repeat-end></div>
+            <!--<my-dad>
+                {{greeting}}
+                <br/>
+                <my-son>
+                    {{sonSays}}
+                </my-son>
+            </my-dad>-->
+        </div>
+        <div id="menu4" class="tab-pane fade">
+            <h3>Menu 4</h3>
+            <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

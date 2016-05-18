@@ -1,0 +1,34 @@
+<html>
+<head>
+	<style>
+		.default {
+			background: red;
+		}
+		.default1 {
+			background: green;
+		}
+	</style>
+	<script type="text/javascript" src="../lib/angular.min.js"></script>
+</head>
+<body ng-app="promiseApp" ng-controller="promiseCtrl">
+	<h2>Resutl: <input type="number" ng-model="index"> </h2>
+	<div ng-repeat="item in testArr">
+		<span ng-class="{'default': $index == index}">{{item}}</span>
+		<div ng-repeat="item in testArr1">
+			<span ng-class="{'default1': $index == index}">{{item}} {{$index}}</span>
+		</div>
+	</div>
+
+</body>
+<script>
+	var app = angular.module('promiseApp', []);
+	app.controller('promiseCtrl', function ($scope, $q) {
+		$scope.index;
+		console.log($scope.index);
+		$scope.testArr = ['one', 'two', 'three', 'four', 'five', 'six', 'seven'];
+		$scope.testArr1 = ['one', 'two', 'three', 'four', 'five', 'six', 'seven'];
+	});
+</script>
+</html>
+
+I have attended the last for an interview

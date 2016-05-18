@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="../lib/angular.min.js"></script>
+	<!--<script type="text/javascript" src="script.js"></script>-->
+</head>
+<body ng-app="promiseApp" ng-controller="promiseCtrl">
+	<div>Value of name in tmpl Name {{name}}</div>
+	<div>Value of name in tmpl Age {{age}}</div>
+	<input type="button" value="From Controller" ng-click="alertName()">
+
+	<p><==================Directive=========================></p>
+
+	<div my-first-directive name="{{name}}" age="age" func="alertName()"></div>
+</body>
+<script>
+
+	var app = angular.module('promiseApp', []);
+	app.controller('promiseCtrl', function ($scope) {
+		$scope.name = "yes";
+		$scope.age = 60;
+		$scope.alertName = function () {
+			alert('Yeah its working');
+		}
+	});
+
+	app.directive("myFirstDirective", function () {
+		return {
+			restrict: 'EA',
+			scope: {
+				name: '@',
+				age: '=',
+				func: '&'
+			},
+			template: ['<p>Value of name in directive: {{name}}</p>',
+						'<p>Enter new name: <input type="text" ng-model="name" ></p>',
+						'<p>Value of the age in directive: {{age}}</p>',
+						'<p>Enter a new age: <input type="text" ng-model="age"></p> ',
+						'<p><input type="button" value="From Directive" ng-click="func()" > </p>'].join('')
+		};
+	});
+
+</script>,
+</html>
