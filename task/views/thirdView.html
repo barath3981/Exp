@@ -1,0 +1,54 @@
+<div>
+    <div class="panel-body">
+        <form class="form-horizontal" role="form">
+            <div class="col-sm-12">
+                <h3>Entered Data</h3>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Name :</label>
+                    <div class="col-sm-6">
+                        <span class="form-control">{{taskObj.name}}</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Phone No :</label>
+                    <div class="col-sm-6">
+                        <span class="form-control">{{taskObj.phoneNO}}</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Address :</label>
+                    <div class="col-sm-6">
+                        <span class="form-control">{{taskObj.address}}</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Email :</label>
+                    <div class="col-sm-6">
+                        <span class="form-control">{{taskObj.emailID}}</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label">Password :</label>
+                    <div class="col-sm-6">
+                        <span class="form-control">{{taskObj.password}}</span>
+                    </div>
+                </div>
+                <br><br>
+                <div class="form-group">
+                    <label class="col-sm-3 control-label"></label>
+                    <div class="col-sm-6">
+                        <button type="button" ng-click="validateSignupForm(taskObj)" class="btn btn-primary active">Signup for Newsletter</button>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+        </form>
+    </div>
+    <div class="panel-footer">
+        <ul class="pager">
+            <li><a href="#/secondview">Previous</a></li>
+            <li class="disabled"><a href="#">Next</a></li>
+        </ul>
+    </div>
+</div>
