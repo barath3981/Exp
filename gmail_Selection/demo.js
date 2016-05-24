@@ -53,11 +53,11 @@ app.controller('DemoCtrl', function($scope, $http, $timeout) {
 
   $scope.enableSearch = function() {
     $scope.searchEnabled = true;
-  }
+  };
 
   $scope.disableSearch = function() {
     $scope.searchEnabled = false;
-  }
+  };
 
   $scope.clear = function() {
     $scope.person.selected = undefined;

@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="07935e86-b6d3-422e-94b1-f00d45836195" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gmail_Selection/demo.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gmail_Selection/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gmail_Selection/select.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gmail_Selection/select.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gmail_Selection/demo.js" afterPath="$PROJECT_DIR$/gmail_Selection/demo.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gmail_Selection/index.html" afterPath="$PROJECT_DIR$/gmail_Selection/index.html" />
     </list>
     <ignored path="Exp.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,23 +25,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="demo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gmail_Selection/demo.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmail_Selection/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-66">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="1474">
+              <caret line="67" column="13" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="13" />
+              <folding>
+                <element signature="n#style#0;n#ui-select#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#2509#4680#0" expanded="false" />
+                <marker date="1463847482342" expanded="true" signature="521:678" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gmail_Selection/index.html">
+      <file leaf-file-name="select.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/gmail_Selection/select.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="22">
+              <caret line="863" column="37" selection-start-line="863" selection-start-column="37" selection-end-line="863" selection-end-column="37" />
               <folding>
-                <marker date="1438448312000" expanded="true" signature="521:678" ph="..." />
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1438447910000" expanded="true" signature="63909:63920" ph="..." />
+                <marker date="1438447910000" expanded="true" signature="64400:64418" ph="..." />
+                <marker date="1438447910000" expanded="true" signature="69002:69014" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gmail_Selection/demo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2574">
+              <caret line="117" column="21" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="21" />
+              <folding>
+                <element signature="e#4785#14332#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -79,6 +96,9 @@
         <option value="$PROJECT_DIR$/task/views/thirdView.html" />
         <option value="$PROJECT_DIR$/task/script.js" />
         <option value="$PROJECT_DIR$/task/services/validationService.js" />
+        <option value="$PROJECT_DIR$/gmail_Selection/index.html" />
+        <option value="$PROJECT_DIR$/gmail_Selection/demo.js" />
+        <option value="$PROJECT_DIR$/gmail_Selection/select.js" />
       </list>
     </option>
   </component>
@@ -119,7 +139,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -140,7 +160,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -236,7 +256,9 @@
       <workItem from="1463761381225" duration="1843000" />
       <workItem from="1463768034193" duration="690000" />
       <workItem from="1463841226896" duration="380000" />
-      <workItem from="1463847324304" duration="65000" />
+      <workItem from="1463847324304" duration="1974000" />
+      <workItem from="1464054282634" duration="11000" />
+      <workItem from="1464054310680" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="git ignore added">
       <created>1463541880617</created>
@@ -259,22 +281,29 @@
       <option name="project" value="LOCAL" />
       <updated>1463589677098</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Gmail selection added">
+      <created>1463847411327</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1463847411327</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19182000" />
+    <option name="totallyTimeSpent" value="21114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="27" width="1856" height="1053" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1890411" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12986301" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33006537" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -302,18 +331,41 @@
     <MESSAGE value="Interview experiments" />
     <MESSAGE value="git ignore added" />
     <MESSAGE value="New interview task added" />
-    <option name="LAST_COMMIT_MESSAGE" value="New interview task added" />
+    <MESSAGE value="Gmail selection added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gmail selection added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/gmail_Selection/select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1438447910000" expanded="true" signature="63909:63920" ph="..." />
+            <marker date="1438447910000" expanded="true" signature="64400:64418" ph="..." />
+            <marker date="1438447910000" expanded="true" signature="69002:69014" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmail_Selection/demo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2574">
+          <caret line="117" column="21" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="21" />
+          <folding>
+            <element signature="e#4785#14332#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Promises/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -321,7 +373,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -329,7 +380,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -337,7 +387,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -625,7 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -633,24 +681,40 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gmail_Selection/demo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="2574">
+          <caret line="117" column="21" selection-start-line="117" selection-start-column="9" selection-end-line="117" selection-end-column="21" />
+          <folding>
+            <element signature="e#4785#14332#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gmail_Selection/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="1474">
+          <caret line="67" column="13" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="13" />
           <folding>
-            <marker date="1438448312000" expanded="true" signature="521:678" ph="..." />
+            <element signature="n#style#0;n#ui-select#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2509#4680#0" expanded="false" />
+            <marker date="1463847482342" expanded="true" signature="521:678" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gmail_Selection/select.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="863" column="37" selection-start-line="863" selection-start-column="37" selection-end-line="863" selection-end-column="37" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1438447910000" expanded="true" signature="63909:63920" ph="..." />
+            <marker date="1438447910000" expanded="true" signature="64400:64418" ph="..." />
+            <marker date="1438447910000" expanded="true" signature="69002:69014" ph="..." />
           </folding>
         </state>
       </provider>
